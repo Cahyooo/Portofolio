@@ -389,9 +389,10 @@
 }
 
 html {
+  margin-bottom: 100px;
   scroll-behavior: smooth;
   width: 100vw;
-  height: 500vh;
+  /* height: 500vh; */
 }
 
 body {
@@ -476,6 +477,10 @@ html {
   width: 150px;
 }
 
+.small{
+  display: none;
+}
+
 @media screen and (max-width: 700px) {
   .nav-text {
     display: flex;
@@ -492,6 +497,13 @@ html {
   }
   .nav-button {
     display: none;
+  }
+  .small{
+    display: flex;
+  }
+  .nav-link:hover:not(button){
+    opacity: 1;
+    font-size:21px;
   }
 }
 
@@ -1213,16 +1225,134 @@ p {
     margin-bottom: 10px;
   }
   .project-showcase a{
-    font-size: calc(5px + 2.5vw);
+    font-size: calc(5px + 2vw);
   }
   .project-scroll article:not(:first-child){
     margin-left: 60px;
   }
-  .project-scroll article:nth-of-type(2){
-    transform: translateY(-4.5vh);
-  }
+  /* .project-scroll article:nth-of-type(2){
+    transform: translateY(-33px);
+  } */
   .project-scroll article:first-of-type .project-info-2{
     transform: translateY(-25px);
   } 
+  .project-scroll article:last-of-type .project-info-2 ul li:last-of-type{
+    color: transparent;
+  background-color: transparent;
+  border: none;
+  }
 }
 
+/* CONTACT */
+
+.contact-stop-scroll{
+  margin-top: 80px;
+  color: transparent;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 50px;
+}
+
+.isi{
+  display: block;
+}
+
+@keyframes mati-nyala{
+  0%{
+    filter: brightness(100%);
+  }
+  25%{
+    filter: brightness(70%);
+  }
+  50%{
+    filter: brightness(50%);
+  }
+  75%{
+    filter: brightness(70%);
+  }
+  100%{
+    filter: brightness(100%);
+  }
+}
+
+.contact-judul{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  animation: mati-nyala 3s linear infinite;
+}
+
+.svg{
+  animation: mati-nyala 3s linear infinite;
+  transform: translate(-1vh,1vh);
+}
+
+.informasi{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  margin-bottom: 3vh;
+}
+.informasi:last-of-type{
+  margin-bottom: 7vh;
+}
+
+.isi{
+  margin: auto;
+  background-color: rgb(47,49,51);
+  border: 0;
+  color: #ffc64c;
+  width: 50vw;
+  height: 6vh;
+  margin-bottom: 1vh;
+  padding-left: 1vw;
+  border-bottom: 1px solid transparent;
+  transition: 0.6s;
+}
+
+.isi::placeholder{
+  font-family: 'Montserrat';
+  font-weight: bolder;
+}
+
+.isi:hover{
+  border-bottom: 2px solid #f7ac0a71;
+}
+
+.isi:focus{
+  outline: none;
+}
+
+.textarea{
+  height: 14vh;
+}
+
+.submit{
+  background-color: #F7AB0A;
+  width: 50.5vw;
+  height: 6vh;
+  display: block;
+  margin: auto;
+  border-radius: 13px;
+  font-weight: bolder;
+  font-size: 20px;
+  animation: mati-nyala 3s linear infinite;
+}
+
+@media screen and (max-width: 750px) {
+  .isi{
+    width: 80vw;
+  }
+  .submit{
+    width: 80.5vw;
+  }
+  .informasi{
+    font-size: 18px;
+  }
+}
+
+#contact{
+  margin-bottom: 100px;
+}
