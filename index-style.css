@@ -980,6 +980,10 @@ p {
     width: 70px;
     height: 100px;
   }
+  .skill-bootstrap{
+    width: 70px;
+    height: 60px;
+  }
   .skill-php {
     width: 90px;
     height: 60px;
@@ -997,32 +1001,20 @@ p {
     width: 120px;
     height: 120px;
   }
+  .skill-nodejs{
+    width: 130px;
+    height: 90px;
+  }
+  .skill-express {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 /* PROJECT */
 
-.project-stop-scroll {
-  margin-top: 100px;
-  color: transparent;
-  background-color: transparent;
-  border: none;
-  margin-bottom: 50px;
-}
-
-.project-scroll {
-  overflow-y: scroll;
-  margin: auto;
-  width: 92%;
-  height: 85vh;
-  white-space: nowrap;
-  scrollbar-width: thin;
-  scrollbar-color: #ccc transparent;
-  /* display: flex;
-  flex-direction: row-reverse; */
-}
-
 /* width */
-.project-scroll::-webkit-scrollbar {
+.project-hidden::-webkit-scrollbar {
   width: 90%;
   /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
   background: rgb(41,41,41);
@@ -1047,14 +1039,37 @@ p {
   background: rgba(255, 174, 0, 0.8);
 }
 
-/* .project-scroll p{
-  width: 2000px;
-} */
+.project-stop-scroll {
+  margin-top: 100px;
+  color: transparent;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 50px;
+}
+
+.project-scroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin: auto;
+  width: 92%;
+  height: 85vh;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+  /* display: flex;
+  flex-direction: row-reverse; */
+}
+
+.project-info{
+  display: flex;
+  flex-direction: column;
+}
+
 .project-showcase{
-  background-color: rgb(41,41,41);
-  width: 1100px;
-  height: 95%;
-  border-radius: 50px;
+  background-color: rgba(181,181,181,0.38);
+  width: 65vw;
+  height: 100%;
+  /* border-radius: 50px; */
   display: inline-block;
 }
 
@@ -1064,11 +1079,150 @@ p {
 
 .foto{
   /* position: absolute; */
-  width: 700px;
-  height: 500px;
+  width: 100%;
+  height: 88%;
+  margin: auto; 
 }
 
 .foto img{
-  background-size: cover;
+  width: 100%;
+  height: 100%;
+  /* background-size: contain; */
   object-fit: cover;
+  /* display: inline-block; */
 }
+
+.project-showcase h1{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.project-showcase h1{
+  font-size: 30px;
+  font-weight: 500;
+  /* display: inline-block; */
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 5px;
+  margin-bottom: 5;
+  text-align: center;
+  /* margin-bottom: 30px; */
+}
+
+.project-showcase a{
+  width: 100%;
+  color: #5f91ff;
+  font-size: 23px;
+  text-align: center;
+  display: block;
+}
+
+.project-info-2{
+  display: none;
+}
+
+.project-info h2{
+  color: rgba(255, 255, 255,1);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: start;
+  margin-left: 0;
+  font-weight: 500;
+}
+
+.project-info ul{
+  margin-top: 0;
+  padding-left: 22px;
+}
+
+.project-info ul li{
+  font-family: 'Montserrat';
+  font-weight: 900;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .project-scroll{
+    height: 70vh;
+  }
+  .project-showcase{
+    width: 80vw;
+  }
+  .project-info h1{
+    font-size: calc(10px + 1vw);
+  }
+  .project-link {
+    font-size: calc(15px + 2vw);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .project-scroll{
+    width: 88vw;
+    height: 60vh;
+  }
+  .project-showcase{
+    height: 98%;
+    width: 85vw;
+  }
+  .foto img{
+    height: 94%;
+  }
+  .project-info-2 h1{
+    font-size: calc(25px);
+  }
+  .project-link {
+    transform: translateY(-17px);
+    font-size: calc(15px + 2vw);
+  }
+  .project-scroll article:not(:first-child){
+    margin-left: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project-stop-scroll {
+    margin-bottom: 120px;
+  }
+
+  .project-scroll{
+    width: 88vw;
+    height: 90vh;
+  }
+  .project-showcase{
+    height: 85vh;
+    width: 85vw;
+  }
+  .foto img{
+    height: 50%;
+  }
+  .project-info h1{
+    font-size: calc(25px);
+  }
+  .project-info-2{
+    display: block;
+  }
+  .project-info-bawah{
+    transform: translateY(-220px);
+  }
+  .project-info-bawah h1+ul li{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .project-link {
+    /* transform: translateY(-17px); */
+    margin-bottom: 10px;
+  }
+  .project-showcase a{
+    font-size: calc(5px + 2.5vw);
+  }
+  .project-scroll article:not(:first-child){
+    margin-left: 60px;
+  }
+  .project-scroll article:nth-of-type(2){
+    transform: translateY(-4.5vh);
+  }
+  .project-scroll article:first-of-type .project-info-2{
+    transform: translateY(-25px);
+  } 
+}
+
