@@ -1009,9 +1009,6 @@ p {
 }
 
 @media screen and (max-width: 430px) {
-  .skill-box article:nth-child(odd) {
-    margin-left: 4vh;
-  }
   .skill-foto {
     width: 100px;
     height: 100px;
@@ -1058,15 +1055,15 @@ p {
     height: 120px;
   }
 }
-
+@media screen and (max-width: 510px) {
+  .skill-box article:nth-child(odd) {
+    margin-left: 4vw;
+  }
+}
 @media screen and (max-width: 370px) {
   .skill-box {
     width: 100%;
     margin: auto;
-  }
-  .skill-isi {
-    width: 120px;
-    height: 150px;
   }
 }
 @media screen and (max-width: 335px) {
@@ -1112,7 +1109,11 @@ p {
   }
 }
 .project-intro-special {
-  background: linear-gradient(0deg, rgba(34,193,195,1) 11%, rgba(45,74,253,1) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 11%,
+    rgba(45, 74, 253, 1) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1417,7 +1418,7 @@ p {
   transform: translate(-4px, 4px);
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 650px) {
   .instagram-box {
     transform: translate(-4vw);
   }
@@ -1425,7 +1426,7 @@ p {
     transform: translate(4vw);
   }
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px) {
   .instagram-box {
     transform: translate(-6vw);
   }
