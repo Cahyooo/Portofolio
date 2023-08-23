@@ -878,6 +878,7 @@ p {
   img:not(
     .skill-js,
     .skill-ts,
+    .skill-sass,
     .skill-bootstrap,
     .skill-tailwind,
     .skill-react,
@@ -918,6 +919,15 @@ p {
 .ts:hover img {
   transform: scale(0.7);
   filter: brightness(110%) grayscale(100%);
+}
+
+.skill-sass{
+  width: 150px;
+  height: 100px;
+}
+.sass:hover img{
+  transform: scale(0.8);
+  filter: brightness(120%);
 }
 
 .skill-bootstrap {
@@ -1024,6 +1034,10 @@ p {
   .skill-css {
     width: 70px;
     height: 100px;
+  }
+  .skill-sass{
+    width: 95px;
+    height: 75px;
   }
   .skill-bootstrap {
     width: 70px;
