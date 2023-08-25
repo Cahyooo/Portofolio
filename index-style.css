@@ -867,7 +867,7 @@ p {
 }
 @media screen and (max-width: 700px) {
   .intro-desc{
-    animation: desc-phone 4s forwards;
+    animation: desc-phone 3s forwards;
   }
 }
 @keyframes desc {
@@ -882,7 +882,7 @@ p {
 }
 @keyframes desc-phone {
   0% {
-    transform: translate(9vw,-30px);
+    transform: translate(9vw,-60px);
     opacity: 0;
   }
   100% {
