@@ -507,7 +507,7 @@ html {
   }
 }
 
-/* INTRODUCTION */
+/*? INTRODUCTION */
 
 .intro {
   width: 100vw;
@@ -549,6 +549,7 @@ p {
   color: rgb(186, 206, 214);
   font-size: 30px;
   font-weight: 600;
+  margin-bottom: 0px;
 }
 .intro-info {
   background: linear-gradient(
@@ -634,6 +635,7 @@ p {
   .intro-profesi {
     text-align: center;
     font-size: 23px;
+    margin-bottom: 20px;
   }
   .intro-desc {
     display: block;
@@ -770,7 +772,156 @@ p {
   }
 }
 
-/* SKILL */
+/*? ANIMATION WHEN ENTERING */
+
+.intro-judul {
+  animation: judul 2s forwards;
+}
+@media screen and (max-width: 700px) {
+  .intro-judul {
+    transform: translate(18vw, -50px);
+    animation: judul-phone 2s forwards;
+  }
+}
+@keyframes judul {
+  0% {
+    transform: translate(0vw, -50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0vw, 0px);
+    opacity: 1;
+  }
+}
+@keyframes judul-phone {
+  0% {
+    transform: translate(18vw, -50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(18vw, 0px);
+    opacity: 1;
+  }
+}
+
+.intro-nama {
+  animation: nama 3s forwards;
+}
+@media screen and (max-width: 700px) {
+  .intro-nama{
+    animation: nama-phone 3.5s forwards;
+  }
+}
+@keyframes nama {
+  0% {
+    transform: translate(-50px,15px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px,15px);
+    opacity: 1;
+  }
+}
+@keyframes nama-phone {
+  0% {
+    transform: translate(-80px,0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px,0px);
+    opacity: 1;
+  }
+}
+
+.intro-profesi {
+  animation: profesi 3s forwards;
+}
+@media screen and (max-width: 700px) {
+  .intro-profesi{
+    animation: profesi-phone 3.5s forwards;
+  }
+}
+@keyframes profesi {
+  0% {
+    transform: translate(50px,0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px,0px);
+    opacity: 1;
+  }
+}
+@keyframes profesi-phone {
+  0% {
+    transform: translate(80px,0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px,0px);
+    opacity: 1;
+  }
+}
+
+.intro-desc {
+  animation: desc 4s forwards;
+}
+@media screen and (max-width: 700px) {
+  .intro-desc{
+    animation: desc-phone 4s forwards;
+  }
+}
+@keyframes desc {
+  0% {
+    transform: translate(0px,-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px,15px);
+    opacity: 1;
+  }
+}
+@keyframes desc-phone {
+  0% {
+    transform: translate(9vw,-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(9vw,0px);
+    opacity: 1;
+  }
+}
+
+.intro-next {
+  animation: next 4s forwards;
+}
+@media screen and (max-width: 700px) {
+  .intro-next{
+    animation: next-phone 4s forwards;
+  }
+}
+@keyframes next {
+  0% {
+    transform: translate(0px,40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px,0px);
+    opacity: 1;
+  }
+}
+@keyframes next-phone {
+  0% {
+    transform: translate(0vw,80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0vw,0px);
+    opacity: 1;
+  }
+}
+
+
+/*? SKILL */
 
 .skill-scroll-stop {
   margin-top: 150px;
@@ -921,11 +1072,11 @@ p {
   filter: brightness(110%) grayscale(100%);
 }
 
-.skill-sass{
+.skill-sass {
   width: 150px;
   height: 100px;
 }
-.sass:hover img{
+.sass:hover img {
   transform: scale(0.8);
   filter: brightness(120%);
 }
@@ -1035,7 +1186,7 @@ p {
     width: 70px;
     height: 100px;
   }
-  .skill-sass{
+  .skill-sass {
     width: 95px;
     height: 75px;
   }
@@ -1091,7 +1242,7 @@ p {
   }
 }
 
-/* PROJECT */
+/*? PROJECT */
 
 .project-stop-scroll {
   margin-top: 100px;
@@ -1272,7 +1423,7 @@ p {
   }
 }
 
-/* CONTACT */
+/*? CONTACT */
 
 .contact-stop-scroll {
   margin-top: 80px;
