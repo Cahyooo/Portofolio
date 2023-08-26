@@ -1599,3 +1599,12 @@ p {
     transform: translate(6vw);
   }
 }
+
+.made-with{
+  text-align: center;
+  font-family: 'Montserrat';
+  transform: translateY(-30px);
+  color: #878787;
+  font-size: 17px;
+  font-weight: 900;
+}
