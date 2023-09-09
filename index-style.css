@@ -1096,11 +1096,11 @@ p {
   width: 100px;
   height: 80px;
   transform: scale(0.8);
-  filter: brightness(70%) grayscale(100%);
+  filter: brightness(90%);
 }
 .tailwind:hover img {
   transform: scale(1);
-  filter: brightness(110%) grayscale(100%);
+  filter: brightness(140%);
 }
 
 .skill-php {
@@ -1110,13 +1110,13 @@ p {
 }
 
 .skill-react {
-  width: 120px;
-  height: 100px;
-  filter: brightness(70%) grayscale(100%);
+  width: 140px;
+  height: 120px;
+  filter: brightness(90%);
 }
 .react:hover img {
   transform: scale(0.8);
-  filter: brightness(110%) grayscale(100%);
+  filter: brightness(130%);
 }
 
 .next {
